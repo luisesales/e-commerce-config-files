@@ -35,11 +35,11 @@ spring:
         - id: order-service
           uri: lb://bankai-operator
           predicates:
-            - Path=/orders/**
+            - Path=/operator/**
           filters:
             - name: CircuitBreaker
               args:
-                name: orders_CB
+                name: operator_CB
                 slidingWindowSize: 20
                 permittedNumberOfCallsInHalfOpenState: 5
                 failureRateThreshold: 50
