@@ -1,1 +1,1 @@
-# bankai-config-files
+# e-commerce-config-files
